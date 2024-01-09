@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid alignment container</title>
+    <style>
+         .container{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            /* justify-content: space-around; */
+            /* here we use all the property of justify content like space-between, start,end,center,space-evenly */
+            /* grid-template-rows: 100px 200px; */
+           border: 1px solid red;
+           height: 400px;
+           grid-row-gap: 20px;
+           align-items: start;
+           /* justify-items: center; */
+           /* here also we can apply all the properties star end streatch etc */
+           /* align-items: center; */
+           /* here also we can perform all the properties of align items like space-between, start,end,center,space-evenly */
+        }
+        div .items{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+</body>
+</html>

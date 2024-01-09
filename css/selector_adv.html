@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sudo selector advance</title>
+    <style>
+        /* sudo selector : laga ke select hote h hamesha (hover ka matlb h ke jab cursor us line pe jaega tab uski css proprty show hongi) */
+       /* h1:hover{
+        background-color: #c56dc5;
+       } */
+       button:focus{
+        background-color: black;
+       }
+       /* special (After tro hamesha content me kuch na kuch chaiye he hota h warna wo work nhi karta ) */
+       h1::after{
+        content:"After!"
+        color:red
+       }
+       /* there are so many selectors like after i.e before ye hamesha phale lagta h.. first-line,first-character */
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <button>submit</button>
+</body>
+</html>

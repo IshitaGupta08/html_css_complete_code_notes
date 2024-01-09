@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            padding: 2px;
+            margin: 10px;
+           
+        }
+        #boxleft{
+            background-color: aqua;
+            border: 3px solid blue;
+            padding: 3px;
+            margin: 2px;
+        }
+        #boxright{
+            background-color: yellow;
+            border: 3px solid brown;
+            padding: 3px;
+            margin: 2px;
+        }
+        p{
+            border: 3px solid red;
+        }
+        img{
+            width: 250px;
+        }
+        /* ab hame yaha media query add karni h ke 640px ke neeche ye image text wale column ke neeche aa jae to yaha hum flex direction column kar denge max-width me  */
+        @media(max-width: 640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>
+                text 1
+            </p>
+            <p>text 2</p>
+        </div>
+        <div id="boxright">
+            <img src="../asset/rinky.jpeg" alt="rinky" >
+        </div>
+    </div>
+</body>
+</html>

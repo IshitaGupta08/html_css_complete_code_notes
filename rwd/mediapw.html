@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100vh;
+        }
+        h1{
+            color: gray;
+        }
+        /* 576px and down */
+        /* max me jo last me likha h wo he max width le lega 0 se us define value tak */
+        /* @media screen and (max-width: 576px) {
+            .box{
+                background-color: rgb(136, 78, 189);
+            }
+        }
+        @media screen and (max-width: 976px) {
+            .box{
+                background-color: rgb(223, 32, 150);
+            }
+        }
+        @media screen and (max-width: 1300px) {
+            .box{
+                background-color: rgb(49, 233, 86);
+            }
+        } */
+        /* small devices: 576px and up */
+        /* to agar hame alag alag size pe alag color lena h to hum min ka use karege ye hame alag alag number par alag color dega */
+        @media screen and (min-width: 576px) {
+            .box{
+                background-color: rgb(136, 78, 189);
+            }
+        }
+        @media screen and (min-width: 980px) {
+            .box{
+                background-color: rgb(221, 50, 116);
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .box{
+                background-color: rgb(24, 211, 52);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="screen">width:</h1>
+    </div>
+</body>
+</html>

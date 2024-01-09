@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid items properties</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: repeat(2 , 1fr);
+            grid-gap: 20px;
+            height: 500px;
+        }
+        div .items{
+            border: 1px solid black;
+        }
+        .item1{
+            justify-self: center;
+        }
+        .item2{
+            justify-self: end;
+        }
+        .item3{
+           justify-self: start;
+        }
+        .item4{
+            align-self: center;
+        }
+        .item5{
+            align-self: end;
+        }
+        .item6{
+           align-self: start;
+        }
+        /* .item1{
+            order: 0;
+        }
+        .item2{
+            order: 6;
+        }
+        .item3{
+            order: 2;
+        }
+        .item4{
+            order: 3;
+        }
+        .item5{
+            order: 4;
+        }
+        .item6{
+            order: 1;
+        } */
+        /* .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item2{
+            grid-column-start: 3;
+        }
+        .item3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        } */
+        /* shorthand notation for this */
+        /* .item1{
+            grid-column: 1/3;
+        }
+        .item2{
+            grid-column: 3/4;
+        }
+        .item3{
+            grid-column: 1/2;
+        }
+        .item4{
+            grid-column: 2/4;
+        } */
+        /* for rows */
+        /* .item1{
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item3{
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item4{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
+        <div class="items item5">5</div>
+        <div class="items item6">6</div>
+</body>
+</html>

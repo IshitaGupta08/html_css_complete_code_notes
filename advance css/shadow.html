@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width:330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 430px;
+            /* border: 2px solid brown; */
+            border: 2px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 50px 35px brown; */
+            /* box-shadow: 50px 35px 5px brown; */
+            /* box-shadow: 50px 35px 5px 30px brown; */
+            box-shadow: 50px 35px 5px 30px var(--primary-color);
+        }
+        #head1{
+            /* text-shadow: 2px 3px 2px white; */
+            /* text-shadow: yellow 10px 20px 3px; */
+            text-shadow: white 10px 20px;
+            /* text-shadow: 10px 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="../asset/arrow.png" alt="">
+            <h1 id="head1">code</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolores mollitia temporibus voluptates numquam illo ducimus officia tempore consectetur minus!</p>
+        </div>
+    </div>
+</body>
+</html>

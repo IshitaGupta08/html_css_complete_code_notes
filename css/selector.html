@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* h1{
+            background-color: #752613;
+        }
+        h2{
+            background-color: blue;
+        } */
+        .bg-orange{
+            background-color: rgb(227, 139, 63);
+        }
+        #bg-green{
+            background-color: rgba(8, 176, 8, 0.797);
+        }
+        a[target="_blank"]{
+            background-color: rgb(165, 86, 240);
+            color: white;
+        }
+        /* to perform group selector */
+        h1,h2{
+            background-color: aqua;
+        }
+        /* combinator operator(means jab hum child ya parent ke baat karte h to child hamesha he parent ke ander aana chaiye) */
+        ul li{
+            background-color: #246854;
+        }
+        /* this selector is used to select the direct child by using >  of the header or any other element*/
+        header > a{
+            background-color: #3b7292;
+        }
+        /* if we want to apply the same background color on the a tag present in the nav of the ul tag the we have to write in this way */
+        header > nav > ul{
+            background-color: #3b7292;
+        }
+        /* for direct sibling we use ~ this option */
+        /* img ~ p{
+            background-color: #b44b73;
+        } */
+        /* + is used to select the just adjucent sibling */
+        img + p{
+            background-color: #b44b73;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <p class="bg-orange">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <!-- the color remain green because the id have higher priority then the class -->
+    <!-- <p class="bg-orange" id="bg-green">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="https://pwskills.com">PW skill</a>
+    <a target="_blank" href="https://ineuron.ai">Ineuron</a> --> 
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <p class="bg-orange">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p class="bg-orange" id="bg-green">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="https://pwskills.com">PW skill</a>
+    <a target="_blank" href="https://ineuron.ai">Ineuron</a>
+    <ul>
+        <li>an</li>
+        <li>ab</li>
+        <li>the</li>
+    </ul>
+    <header>
+        <a href="#">google</a>
+        <nav>
+            <ul>
+                <li>tea</li>
+                <a href="#">logo</a>
+            </ul>
+        </nav>
+        <a href="#">facebook</a>
+    </header>
+    <div>
+        <img src="#" alt="kik">
+        <p>Lorem ipsum dolor sit.</p>
+        <div>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>
